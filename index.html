@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="San Marino Italian Bar & Restaurant in Warrington. Traditional Italian dining, pizza, pasta and more.">
+<title>San Marino | Italian Bar & Restaurant | Warrington</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+<div class="logo">SAN MARINO</div>
+<button type="button" class="mobile-menu" onclick="document.querySelector('.navlinks').classList.toggle('open')" aria-label="Toggle menu">MENU</button>
+<div class="navlinks">
+<a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About</a><a href="#contact">Contact</a><a class="navbtn" href="#booking">Book a table</a>
+</div>
+</nav>
+
+<header class="hero" id="home">
+<div class="hero-inner">
+<div class="eyebrow">Authentic Italian Cuisine</div>
+<h1>San Marino</h1>
+<div class="subtitle">ITALIAN BAR &amp; RESTAURANT</div>
+<p class="hero-copy">Traditional Italian dining in the heart of Warrington. Pizza, pasta and classic favourites served in a warm, relaxed setting.</p>
+<div class="actions"><a class="btn primary" href="#menu">VIEW MENU →</a><a class="btn outline" href="#booking">BOOK A TABLE</a></div>
+</div>
+</header>
+
+<div class="quick">
+<div><strong>Find us</strong><span>[Address — demo placeholder]</span></div>
+<div><strong>Bookings</strong><span>[Phone number — demo placeholder]</span></div>
+<div><strong>Opening hours</strong><span>Mon–Sat 4pm–11:30pm<br>Sun 4pm–10pm</span></div>
+<div><strong>Dining</strong><span>Italian food • Bar • Restaurant</span></div>
+</div>
+
+<section id="about" class="center">
+<div class="eyebrow">Welcome to San Marino</div>
+<h2>A taste of Italy in Warrington</h2>
+<p class="lead">A warm, modern restaurant website concept built around San Marino's Italian dining identity. The details below should be checked with the restaurant before this demo is published as an official site.</p>
+<div class="feature-grid">
+<div class="feature"><h3>🍕 Pizza</h3><p>Classic Italian-style pizzas with fresh toppings and a crisp, golden base.</p></div>
+<div class="feature"><h3>🍝 Pasta</h3><p>Comforting favourites including Bolognese, Carbonara and traditional lasagna.</p></div>
+<div class="feature"><h3>🍰 Dolci</h3><p>Round off your meal with classic Italian desserts and sweet favourites.</p></div>
+</div>
+</section>
+
+<section class="dark" id="menu">
+<div class="dark-inner">
+<div class="eyebrow">The menu</div><h2>Italian favourites</h2>
+<p class="lead" style="margin-left:0">A selection for the demo. Prices and availability should be confirmed against the restaurant's current official menu before launch.</p>
+<div class="menu-tabs">
+<button type="button" class="tab active" onclick="filterMenu('all',this)">All</button>
+<button type="button" class="tab" onclick="filterMenu('pizza',this)">Pizza</button>
+<button type="button" class="tab" onclick="filterMenu('pasta',this)">Pasta</button>
+<button type="button" class="tab" onclick="filterMenu('dessert',this)">Desserts</button>
+</div>
+<div class="menu-grid" id="menuGrid">
+<div class="dish" data-cat="pizza"><div class="dish-top"><strong>Margherita</strong><span class="price">£11.95</span></div><p>Tomato, mozzarella, basil and extra virgin olive oil.</p></div>
+<div class="dish" data-cat="pizza"><div class="dish-top"><strong>Pizza Prosciutto di Parma</strong><span class="price">£14.95</span></div><p>Tomato, mozzarella, Parma ham, rocket, cherry tomato and Parmesan.</p></div>
+<div class="dish" data-cat="pasta"><div class="dish-top"><strong>Spaghetti Bolognese</strong><span class="price">£14.95</span></div><p>Slow-cooked beef ragù in tomato sauce with fresh basil.</p></div>
+<div class="dish" data-cat="pasta"><div class="dish-top"><strong>Spaghetti Carbonara</strong><span class="price">£14.95</span></div><p>Carbonara with cream, free-range egg yolk, pancetta and Parmesan.</p></div>
+<div class="dish" data-cat="pasta"><div class="dish-top"><strong>Lasagna Tradizionale</strong><span class="price">£14.95</span></div><p>Layered pasta with beef ragù, béchamel, mozzarella and basil.</p></div>
+<div class="dish" data-cat="dessert"><div class="dish-top"><strong>Tiramisù</strong><span class="price">£5.85</span></div><p>Mascarpone cream, coffee-soaked biscuits and cocoa.</p></div>
+</div>
+</div>
+</section>
+
+<section class="booking" id="booking">
+<div class="booking-box">
+<div><div class="eyebrow">Reserve your table</div><h2>Make an evening of it.</h2><p>For the demo, the booking button takes guests to the restaurant's official website. If San Marino commissions the site, this can be replaced with their approved live booking system.</p></div>
+<div><a class="btn primary" href="#booking">BOOK A TABLE →</a><a class="btn outline" href="#contact">CONTACT US</a></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="eyebrow">Visit us</div><h2>Come for dinner.</h2>
+<div class="contact-grid">
+<div class="contact-card"><h3>San Marino</h3><p><strong>Address</strong><br>[Address — demo placeholder]</p><p><strong>Phone</strong><br>[Phone number — demo placeholder]</p><p><strong>Website</strong><br>[Website — demo placeholder]</p><a class="btn primary" href="#contact">GET DIRECTIONS →</a></div>
+<div><div class="map" style="display:flex;align-items:center;justify-content:center;background:#efe3d3;color:#7b4d2c;font:14px Arial,sans-serif;text-align:center;padding:20px">Map placeholder — real location omitted for this demo</div></div>
+</div>
+</section>
+
+<footer class="footer">
+<p><strong>SAN MARINO</strong> • Italian Bar &amp; Restaurant • Warrington</p>
+<p>Independent website concept. Not the official San Marino website unless approved by the restaurant.</p>
+<p><a href="#home">Back to top ↑</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
